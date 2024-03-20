@@ -3,7 +3,7 @@ import { borrarReceta, crearReceta, editarReceta, listarRecetas, obtenerReceta }
 
 const router = Router();
 
-router.route("/productos").get(listarRecetas).post(crearReceta)
-router.route('/producto/:id').get(obtenerReceta).put(editarReceta).delete(borrarReceta)
+router.route("/recetas").get(listarRecetas).post(crearReceta)
+router.route('/receta/:id').get(obtenerReceta).put(editarReceta).delete(borrarReceta)
 
 export default router;
